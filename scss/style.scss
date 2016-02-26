@@ -28,6 +28,32 @@ body {
 .clearfix { display: block; }
 /* close commented backslash hack */
 
+// ----------------------- Compnents -------------------------
+
+.btn {
+    margin: 5px;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 13px;
+    background-color: $main;
+    color: $white;
+    opacity: .9;
+    transition: opacity .3s ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.btn-highlight {
+    background-color: $highlight;
+}
+
+.btn-secondary {
+    background-color: $secondary;
+}
+
 // ----------------------- Grid -------------------------
 .container {
     flex: 1;
@@ -51,7 +77,6 @@ body {
 }
 
 .col-1 {
-    background-color: red;
     max-width: 500px;
     margin: 0 10px;
 }
@@ -119,3 +144,26 @@ body {
     }
 }
 
+// ----------------------- Home -------------------------
+
+section#home {
+    padding: 100px 0;
+    box-sizing: border-box;
+    background: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $white;
+    .btn-container {
+        margin-top: 20%;
+        text-align: center;
+    }
+    .responsive {
+        box-shadow: 0 1px 2px 1px rgba(255,255,255,.2);
+        width: 100%;
+    }
+    p {
+        margin-top: 10%;
+        font-size: 17px;
+    }
+}
