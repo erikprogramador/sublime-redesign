@@ -1,0 +1,121 @@
+// ----------------------- Variaveis -------------------------
+
+$main: #4c4c4c;
+$secondary: #747474;
+$highlight: #fda43c;
+$gray: #d5d5d5;
+$white: #FFFFFF;
+
+// ----------------------- Geral -------------------------
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+// ----------------------- Grid -------------------------
+.container {
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+    flex-direction: rows;
+}
+
+.flex--center {
+    justify-content: center;
+}
+
+.flex--space-around {
+    justify-content: space-around;
+}
+
+.order-first {
+    order: -1;
+}
+
+.col-1 {
+    background-color: red;
+    max-width: 500px;
+    margin: 0 10px;
+}
+
+.col-2 {
+    max-width: 1040px;
+    margin: 0 10px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+@media (max-width: 1040px) {
+    .container .flex {
+        display: block;
+    }
+
+    .col-1 {
+        max-width: 100%;
+    }
+}
+
+
+// ----------------------- NavBar -------------------------
+
+#main-header {
+    background-color: $white;
+    width: 100%;
+    padding: 20px 5%;
+    box-shadow: 0 -2.9px 10px 1px #000000;
+    box-sizing: border-box;
+    img {
+        float: left;
+        width: 30px;
+        margin: -2px 0;
+    }
+    h1 {
+        color: $main;
+        float: left;
+        margin: 0 10px 0;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    nav {
+        float: right;
+        ul {
+            margin: 0;
+            list-style: none;
+            li {
+                display: inline;
+                margin-right: 10px;
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: $main;
+                    transition: color .3s ease-in-out;
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+
