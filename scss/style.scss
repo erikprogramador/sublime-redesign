@@ -211,6 +211,21 @@ section#systems {
     }
 }
 
-// ----------------------- Systems -------------------------
+// ----------------------- Download -------------------------
 
-
+section#download {
+    padding: 100px;
+    .col-2 {
+        text-align: center;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+    p {
+        font-size: 12px;
+        color: $main;
+        a {
+            text-decoration: none;
+        }
+    }
+}
