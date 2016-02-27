@@ -61,6 +61,8 @@ body {
 // ----------------------- Grid -------------------------
 .container {
     flex: 1;
+    position: absolute;
+    width: 100%;
 }
 
 .flex {
@@ -108,6 +110,8 @@ body {
 // ----------------------- NavBar -------------------------
 
 #main-header {
+    position: fixed;
+    z-index: 999999;
     background-color: $white;
     width: 100%;
     padding: 20px 5%;
@@ -151,6 +155,7 @@ body {
 // ----------------------- Home -------------------------
 
 section#home {
+    margin-top: 60px;
     padding: 100px 0;
     box-sizing: border-box;
     background: url(../images/header-bg.png);
@@ -227,5 +232,30 @@ section#download {
         a {
             text-decoration: none;
         }
+    }
+}
+
+// ----------------------- Buy -------------------------
+
+section#buy {
+    box-sizing: border-box;
+    background-color: $main;
+    padding: 100px;
+    .flex {
+        margin-top: 50px;
+    }
+    p {
+        position: relative;
+        margin-left: 50%;
+        left: -25%;
+        color: $white;
+        font-size: 12px;
+        max-width: 50%;
+    }
+    h2 {
+        color: $white;
+    }
+    .btn {
+        font-size: 20px;
     }
 }
