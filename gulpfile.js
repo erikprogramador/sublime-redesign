@@ -7,7 +7,6 @@ elixir(function (mix) {
 
     mix.sass([
         node_modules + 'normalize-css/normalize.css',
-        node_modules + 'font-awesome/css/font-awesome.css',
         base + 'scss/style.scss'
     ], 'css/app.min.css');
 
@@ -15,6 +14,4 @@ elixir(function (mix) {
         node_modules + 'jquery/dist/jquery.js',
         base + 'scripts/script.js'
     ], 'js/app.min.js');
-
-    mix.copy(node_modules + 'font-awesome/fonts', 'fonts');
 });

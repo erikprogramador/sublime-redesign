@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "font-awesome": "^4.5.0",
     "jquery": "^2.2.1",
     "normalize-css": "^2.3.1"
   },
